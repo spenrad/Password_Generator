@@ -28,26 +28,38 @@ console.log(numArray);
 console.log(charArray);
 
 // develop number generator for each array
-    // create a variable that makes 'randomNum' equal to an corresponding Array index position
-        function randomNum(array) {
-          return Math.floor(Math.random() * (array).length);
-        }
+// create a variable that makes 'randomNum' equal to an corresponding Array index position
+  function randomNum(array) {
+    return Math.floor(Math.random() * (array).length);
+    }
 
 // create var for each array including this function
-        var alphaRandom = randomNum(alphaArray);
-          console.log(alphaRandom);
+    var alphaRandom = randomNum(alphaArray);
+      // console.log(alphaRandom);
 
-        var alphaCapRandom = randomNum(alphaCapArray);
-          console.log(alphaCapRandom);
+    var alphaCapRandom = randomNum(alphaCapArray);
+      // console.log(alphaCapRandom);
 
-        var numRandom = (randomNum(numArray));
-          console.log(numRandom);
+    var numRandom = (randomNum(numArray));
+      // console.log(numRandom);
 
-        var charRandom = (randomNum(charArray));
-          console.log(charRandom);
+    var charRandom = (randomNum(charArray));
+      // console.log(charRandom);
 
-// create a function to return the index value of the randomly generated number
+// create a var that gives the index value of the randomNum generated
+    var alphaSelector = alphaArray[alphaRandom];
+      console.log(alphaSelector);
 
+    var alphaCapSelector = alphaCapArray[alphaCapRandom];
+      console.log(alphaCapSelector);
+
+    var numSelector = numArray[numRandom];
+      console.log(numSelector);
+
+    var charSelector = charArray[charRandom];
+      console.log(charSelector);
+
+  
         
 
 
