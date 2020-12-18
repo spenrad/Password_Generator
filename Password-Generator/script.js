@@ -37,6 +37,15 @@ console.log(charArray);
         var alphaRandom = randomNum(26);
           console.log(alphaRandom);
 
+        var alphaCapRandom = randomNum(26);
+          console.log(alphaCapRandom);
+
+        var numRandom = (randomNum(10));
+          console.log(numRandom);
+
+        var charRandom = (randomNum(31));
+          console.log(charRandom);
+
 
 
 
