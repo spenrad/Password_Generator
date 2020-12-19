@@ -59,6 +59,7 @@ console.log(charArray);
     var charSelector = charArray[charRandom];
       console.log(charSelector);
 
+
 // define generatePassword function
     function generatePassword() {
       // Prompt the user to choose the length of the password
@@ -68,22 +69,23 @@ console.log(charArray);
          desiredLength = prompt("Please enter a valid number greater than or equal to 8 or less than or equal to 128.");
         }
     //   // User will confirm which characters they want to use in their password
-      var confirmLower = confirm("Do you want your password to contain lowercase characters?");
-    //     //if confirm is true include lowercase in passwordwriter
+      
+      var confirmLower = confirm("Do you want your password to contain lowercase characters?");  
       var confirmUpper = confirm("Do you want your password to contain uppercase characters?");
-    //     //if confirm is true include uppercase in passwordwriter
-      var confirmNum = confirm("Do you want your password to contain numbers?");
-    //     // if confirm is true include numbers in passwordwriter
+      var confirmNum = confirm("Do you want your password to contain numbers?"); 
       var confirmChar = confirm("Do you want your password to contain special characters?");
-    //     // if confirm is true include special characters in passwordwriter
         if (confirmLower == false && confirmUpper == false && confirmNum == false && confirmChar == false) {
+        //       // alert that you must choose one character type
             alert("You MUST choose at least one character type!");
         }
-    //       // alert that you must choose one character type
+
+        // generate password selecting fuction
+        var password = ""
+        for (i = 0; i < desiredLength; i+=4) {
+         password += alphaSelector + alphaCapSelector + numSelector + charSelector;
     }
-
-        
-
+        return password;
+  }
 
 
 
