@@ -59,7 +59,19 @@ console.log(charArray);
     var charSelector = charArray[charRandom];
       console.log(charSelector);
 
-  
+// define generatePassword function
+    function generatePassword() {
+      var desiredLength = prompt("Choose the length of your password. Password must be greater than 8 characters and no more than 128 characters.");
+      // console.log(typeof desiredLength)  
+      // parseInt(desiredLength);
+      // console.log(typeof desiredLength)
+        if (desiredLength < 8 || desiredLength > 128) {
+          alert("Follow the damn rules!");
+        }
+    }
+     
+// console.log(desiredLength);
+
         
 
 
