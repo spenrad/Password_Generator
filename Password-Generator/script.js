@@ -61,16 +61,18 @@ console.log(charArray);
 
 // define generatePassword function
     function generatePassword() {
+      // Prompt the user to choose the length of the password
       var desiredLength = prompt("Choose the length of your password. Password must be greater than 8 characters and no more than 128 characters.");
-      // console.log(typeof desiredLength)  
-      // parseInt(desiredLength);
-      // console.log(typeof desiredLength)
+        // The length must be between 8-128 characters
         if (desiredLength < 8 || desiredLength > 128) {
           alert("Follow the damn rules!");
         }
+      // User will confirm which characters they want to use in their password
+      var confirmLower = confirm("Do you want your password to contain lowercase characters?");
+      var confirmUpper = confirm("Do you want your password to contain uppercase characters?");
+      var confirmNum = confirm("Do you want your password to contrain numbers?");
+      var confirmChar = confirm("Do you want your password to contain special characters?");
     }
-     
-// console.log(desiredLength);
 
         
 
