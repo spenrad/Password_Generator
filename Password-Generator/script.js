@@ -64,14 +64,22 @@ console.log(charArray);
       // Prompt the user to choose the length of the password
       var desiredLength = prompt("Choose the length of your password. Password must be greater than 8 characters and no more than 128 characters.");
         // The length must be between 8-128 characters
-        if (desiredLength < 8 || desiredLength > 128) {
-          alert("Follow the damn rules!");
+        while (desiredLength < 8 || desiredLength > 128) {
+         desiredLength = prompt("Please enter a valid number greater than or equal to 8 or less than or equal to 128.");
         }
-      // User will confirm which characters they want to use in their password
+    //   // User will confirm which characters they want to use in their password
       var confirmLower = confirm("Do you want your password to contain lowercase characters?");
+    //     //if confirm is true include lowercase in passwordwriter
       var confirmUpper = confirm("Do you want your password to contain uppercase characters?");
-      var confirmNum = confirm("Do you want your password to contrain numbers?");
+    //     //if confirm is true include uppercase in passwordwriter
+      var confirmNum = confirm("Do you want your password to contain numbers?");
+    //     // if confirm is true include numbers in passwordwriter
       var confirmChar = confirm("Do you want your password to contain special characters?");
+    //     // if confirm is true include special characters in passwordwriter
+        if (confirmLower == false && confirmUpper == false && confirmNum == false && confirmChar == false) {
+            alert("You MUST choose at least one character type!");
+        }
+    //       // alert that you must choose one character type
     }
 
         
